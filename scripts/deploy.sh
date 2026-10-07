@@ -14,6 +14,7 @@ cd "$ROOT"
 say()  { printf '\n\033[1;34m==>\033[0m %s\n' "$*"; }
 ok()   { printf '    \033[0;32m[ok]\033[0m %s\n' "$*"; }
 die()  { printf '\n\033[0;31m[!]\033[0m %s\n' "$*" >&2; exit 1; }
+warn() { printf '    \033[0;33m[!]\033[0m %s\n' "$*"; }
 
 # --- 1. Preconditions --------------------------------------------------
 say "Checking prerequisites"
