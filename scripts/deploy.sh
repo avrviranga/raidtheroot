@@ -21,8 +21,13 @@ command -v docker >/dev/null || die "docker not found"
 docker compose version >/dev/null 2>&1 || die "docker compose v2 plugin not found"
 ok "docker $(docker --version | awk '{print $3}' | tr -d ,)"
 
-[[ -f .env ]] || die ".env not found. Run: cp .env.template .env  then edit it."
+#[[ -f .env ]] || die ".env not found. Run: cp .env.template .env  then edit it."
 # shellcheck disable=SC1091
+if [[ ! -f .env ]]; then
+    warn ".env not found - creating it from .env.template"
+    cp .env.template .env
+    ok ".env created from template"
+fi
 set -a; source .env; set +a
 for var in DB_ROOT_PASSWORD DB_PASSWORD CTFD_SECRET_KEY STAGE6_PASSWORD; do
     [[ "${!var:-CHANGE_ME}" == "CHANGE_ME" || -z "${!var:-}" ]] \
