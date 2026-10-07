@@ -1,6 +1,6 @@
 # Stage 5 — Inside the Network (Network Forensics)
 
-**Owner:** Member 3 (Challenge Design B)
+**Owner:** IT24101430 (Challenge Design B)
 **Flag:** `RTR{inside-network_bankcore01}`
 
 ## Files

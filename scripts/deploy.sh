@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # RaidTheRoot (RTR) - deployment script
-# Member 1 (Platform & Architecture)
+# IT24100446 (Platform & Architecture)
 #
 # Brings up the control plane and both live challenge stages from a clean
 # state. Safe to re-run.

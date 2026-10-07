@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # RaidTheRoot (RTR) - reset / recovery script
-# Member 1 (Platform & Architecture)
+# IT24100446 (Platform & Architecture)
 #
 # Usage:
 #   ./scripts/reset.sh stage3     restart the Stage 3 portal (non-destructive)

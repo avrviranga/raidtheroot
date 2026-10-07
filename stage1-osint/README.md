@@ -1,6 +1,6 @@
 # Stage 1 — The First Trace (OSINT / Reconnaissance)
 
-**Owner:** Member 2 (Challenge Design A)
+**Owner:** IT24103666 (Challenge Design A)
 **Flag:** `RTR{first-trace_RJewantha}`
 
 ## Artefacts

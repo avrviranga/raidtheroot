@@ -1,6 +1,6 @@
 # Stage 6 — Find the Ghost (Linux / System Security) — Capstone
 
-**Owner:** Member 3 (Challenge Design B)
+**Owner:** IT24101430 (Challenge Design B)
 **Flag:** `RTR{find-the-ghost_root}`
 **Target:** `ssh <user>@127.0.0.1 -p 2222`
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # RaidTheRoot (RTR) - setup helper & doctor
-# Member 1 (Platform & Architecture)
+# IT24100446 (Platform & Architecture)
 #
 # Handles the machine-specific setup the deploy script cannot (the /etc/hosts
 # entry), and diagnoses the common first-run problems. Safe to run repeatedly.

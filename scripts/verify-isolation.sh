@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 #
 # RaidTheRoot (RTR) - isolation verification
-# Member 1 (Platform & Architecture)
+# IT24102116 (Platform & Architecture)
 #
 # Self-developed verification tool. Executes test cases T-05 (network
-# isolation) and T-06 (flag containment) from the Assignment 01 testing plan
-# and prints a pass/fail report suitable for use as testing evidence.
+# isolation) and T-06 (flag containment).
 #
 # Every check below is written as "this connection MUST fail". A reachable
 # target is a FAIL, because it would mean a compromised challenge container

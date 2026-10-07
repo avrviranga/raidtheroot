@@ -1,6 +1,6 @@
 # Stage 2 — The Ghost File (Steganography)
 
-**Owner:** Member 2 (Challenge Design A)
+**Owner:** IT24103666 (Challenge Design A)
 **Flag:** `RTR{ghost-file_vault03}`
 
 ## Files

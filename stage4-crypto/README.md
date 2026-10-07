@@ -1,6 +1,6 @@
 # Stage 4 — The Locked Vault (Cryptography)
 
-**Owner:** Member 3 (Challenge Design B)
+**Owner:** IT24101430 (Challenge Design B)
 **Flag:** `RTR{locked-vault_decrypted}`
 
 ## Files

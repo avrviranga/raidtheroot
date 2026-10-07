@@ -1,20 +1,10 @@
 #!/usr/bin/env bash
 #
 # RaidTheRoot (RTR) - automated CTFd event import
-# Member 1 (Platform & Architecture)
+# IT24100446 (Platform & Architecture)
 #
-# Optional convenience script. Runs AFTER deploy.sh. Imports the event export
-# directly inside the CTFd container using CTFd's own `import_ctf` manage
-# command, so it never touches the web layer or needs a CSRF token - which is
-# what made the HTTP-API approach return 403.
+# Optional convenience script. Runs AFTER deploy.sh.
 #
-# Because the import restores the admin account that was in the export, the
-# login credentials afterwards are whatever they were when the export was
-# made - NOT the CTFD_ADMIN_* values in .env. Those admin values are only used
-# if you set CTFd up manually in the browser first.
-#
-# The manual browser path (README Path B) still works; this is the automatic
-# alternative.
 #
 # Usage:
 #   ./scripts/setup-ctfd.sh
@@ -57,9 +47,6 @@ docker cp "$EXPORT_ZIP" "$CONTAINER:/tmp/rtr-event-export.zip"
 ok "copied to /tmp/rtr-event-export.zip"
 
 # --- import via CTFd's own manage command -----------------------------
-# `python manage.py import_ctf <zip>` is CTFd's supported offline importer.
-# It wipes and restores the database from the backup, so it works on a fresh
-# (not-yet-set-up) instance and brings the admin account with it.
 say "Importing event (this wipes and restores the CTFd database)"
 if docker exec -w /opt/CTFd "$CONTAINER" \
      python manage.py import_ctf /tmp/rtr-event-export.zip 2>&1 | tee /tmp/rtr_import.log
